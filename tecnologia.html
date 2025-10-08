@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Tecnología Básica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1s;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚀 TechHub</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#temas">Temas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Bienvenido a TechHub</h1>
+        <p>Descubre el mundo de la tecnología de forma simple y clara</p>
+    </section>
+    
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Computadoras</h3>
+                <p>Las computadoras son dispositivos electrónicos que procesan información. Están compuestas por hardware (componentes físicos) y software (programas). Nos permiten trabajar, estudiar, comunicarnos y entretenernos.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>Smartphones</h3>
+                <p>Los teléfonos inteligentes son mini computadoras portátiles. Tienen procesadores potentes, acceso a internet, cámaras de alta calidad y miles de aplicaciones que facilitan nuestra vida diaria.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Internet</h3>
+                <p>Internet es una red global que conecta millones de dispositivos en todo el mundo. Permite compartir información, comunicarse instantáneamente y acceder a recursos desde cualquier lugar.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">☁️</div>
+                <h3>La Nube</h3>
+                <p>El almacenamiento en la nube permite guardar archivos en servidores remotos accesibles por internet. Servicios como Google Drive, Dropbox e iCloud nos permiten acceder a nuestros datos desde cualquier dispositivo.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>Ciberseguridad</h3>
+                <p>La ciberseguridad protege sistemas, redes y datos de ataques digitales. Es importante usar contraseñas seguras, actualizar software regularmente y ser cuidadosos con la información personal online.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3>Inteligencia Artificial</h3>
+                <p>La IA permite que las máquinas aprendan y tomen decisiones. Se usa en asistentes virtuales, reconocimiento facial, recomendaciones personalizadas y vehículos autónomos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 TechHub. Aprendiendo tecnología básica juntos.</p>
+    </footer>
+</body>
+</html>
