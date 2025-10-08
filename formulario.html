@@ -183,25 +183,35 @@
 
         .social-login {
             display: flex;
+            justify-content: center;
+            /* centra horizontalmente */
+            align-items: center;
+            /* centra verticalmente */
             gap: 15px;
             margin-bottom: 25px;
         }
 
+
         .social-btn {
             flex: 1;
-            padding: 12px;
+            padding: 6px;
+            /* antes 12px */
             border: 2px solid #e0e0e0;
-            border-radius: 10px;
+            border-radius: 8px;
             background: white;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            /* antes 1.5rem */
             transition: all 0.3s;
+            max-width: 40px;
+            /* opcional: limita el tamaño del botón */
         }
 
         .social-btn:hover {
             border-color: #11998e;
             transform: translateY(-2px);
         }
+
 
         .register-link {
             text-align: center;
